@@ -1,0 +1,103 @@
+.header
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 90px
+  z-index 10
+  background $DARK
+
+  .content 
+    height 100%
+    display flex
+    align-items center
+  &-wrapper
+    display flex
+    height 100%
+    align-items center
+    width 100%
+    justify-content space-between
+    position relative
+  &-center
+    position absolute
+    left 50%
+    transform translateX(-50%)
+    height 100%
+    display flex
+    flex-direction column
+    justify-content center
+
+.header-languages
+  ul
+    display flex
+    align-items center
+    li
+      &:last-child
+        a
+          border-right none
+    a
+      display flex
+      justify-content center
+      align-items center
+      width 40px
+      font-size 14px
+      color $WH
+      border-right 1px solid $WH
+      transition $tr
+      &:hover
+        color $GOLD
+
+
+nav.menu
+  ul
+    display flex
+    align-items center
+    justify-content center
+  li
+    margin-right 30px
+    &:last-child
+      margin-right 0
+    a
+      text-transform uppercase
+      color $WH
+      position relative
+      transition $tr
+      &::before,
+      &::after
+        content ''
+        position absolute
+        left 0
+        top -4px
+        opacity 0
+        transition $tr
+        width 100%
+        height 1px
+        background $GOLD
+      &:hover
+        color $GOLD
+        &::after,
+        &::before
+          opacity 1
+      &::after
+        top auto
+        bottom -4px
+
+.header-logo
+  margin-bottom 15px
+  a
+    display flex
+    justify-content center
+    align-items center
+    height 35px
+
+.header-phone
+  margin-right 30px
+  a
+    transition $tr
+    color $WH
+    &:hover
+      color $GOLD
+
+.header-right
+  display flex
+  align-items center

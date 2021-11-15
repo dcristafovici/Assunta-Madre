@@ -1,0 +1,39 @@
+include ../button/button
+mixin header(data)
+  header.header
+    .content
+      .header-wrapper
+        .header-left
+          .header-languages
+            ul
+              li
+                a(href="#") RU
+              li
+                a(href="#") EN
+              li
+                a(href="#") IT
+        .header-center
+          .header-logo
+            a(href="index.html").logo
+              img(src="static/img/assets/header/logo.svg", alt="Logo")
+          nav.menu
+            ul
+              li
+                a(href="#") Главная
+              li
+                a(href="#") О ресторане
+              li
+                a(href="#") События
+              li
+                a(href="#") Меню
+              li
+                a(href="#") Доставка
+              li
+                a(href="#")  Assunta Avia
+              li
+                a(href="#") Контакты 
+        .header-right
+          .header-phone
+            a(href="tel:+7 (495) 154 50 25") +7 (495) 154 50 25 
+          .header-button
+            +button('#','Зарезервировать')
