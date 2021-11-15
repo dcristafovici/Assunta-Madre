@@ -1,0 +1,27 @@
+.contacts
+  padding-bottom 50px
+  &-wrapper
+    display flex
+    justify-content space-between
+  &-left
+    width calc(40% - 15px)
+  &-right
+    width calc(60% - 15px)
+  &-left
+    p,
+    a,
+    address
+      display block
+      color $DARK
+      font-size 18px
+      margin-bottom 10px
+    a
+      transition $tr
+      &:hover
+        color $GOLD
+    &__top
+      margin-bottom 75px
+    &__bottom
+      h3
+        margin-top 20px
+        margin-bottom 15px

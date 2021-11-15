@@ -20,3 +20,23 @@ mixin footer(data)
           span Подписаться на новости
         .footer-right 
           span 2021 © Assunta Madre
+
+  #popup.popup 
+    .popup-title
+      h3 Зарезервировать
+    form.form
+      .form-group
+        input(type="text" placeholder="ФИО*")
+      .form-group
+        input(type="tel" placeholder="Телефон")
+      .form-group
+        input(type="email" placeholder="E-mail")
+      .form-group
+        input(type="date" placeholder="Дата визита*")
+      .form-group
+        input(type="text" placeholder="Количество гостей*")
+      .form-group
+        button.button
+          span Отправить
+      .form-group
+        span Для подтверждения бронирования с вами свяжется наш менеджер.

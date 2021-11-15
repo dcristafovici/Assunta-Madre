@@ -1,0 +1,23 @@
+mixin contacts(data)
+  section.contacts
+    .content
+      .title
+        h1 Контакты
+      
+      .contacts-wrapper
+        .contacts-left
+          .contacts-left__top 
+            p Банкетное сопровождение и другие предложения:
+            a(href="tel:+7 (495) 154 32 57") +7 (495) 154 32 57 
+            a(href="mailto:info@assuntamadre.ru") info@assuntamadre.ru 
+          .contacts-left__bottom
+            address Москва, Поварская 52/55, к. 2
+            h3 Свяжитесь с нами
+            form.form
+              .form-group
+                input(type="text" placeholder="ФИО*")
+              .form-group
+                input(type="text" placeholder="Телефон")
+              .form-group
+                textarea(placeholder="Комментарий")
+          #maped
