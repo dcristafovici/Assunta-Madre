@@ -3,6 +3,8 @@ html(class="no-js", lang="ru")
 
   include ../components/head/head
   include ../components/header/header
+  include ../components/home/home
+  include ../components/slider/slider
   include ../components/footer/footer
 
   head
@@ -14,6 +16,10 @@ html(class="no-js", lang="ru")
 
       +header()
       
+      +home()
+
+      +slider()
+
       +footer()
 
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
