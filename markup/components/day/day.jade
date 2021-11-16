@@ -1,0 +1,87 @@
+include ../button/button
+mixin day(data)
+  section.day
+    .content
+      .title
+        h1
+          span Улов дня
+      
+      .day-wrapper
+        .day-point
+          .day-point__name 
+            h2 Гарниры
+          .day-point__list
+            ul
+              li
+                span Жареный артишок с чесноком и мятой | 100 г	
+                span 2 100
+              li
+                span Шпинат аль сальто	
+                span 600
+              li
+                span Овощи гриль	
+                span 500
+              li
+                span Запеченный картофель	
+                span 850
+              li
+                span Пюре картофельное	
+                span 450
+              li
+                span Спаржа на гриле / на пару	
+                span 990
+              li
+                span Бок-чой	
+                span 790
+              li
+                span Цукини фри	
+                span 2 400
+              li
+                span Капоната по-сицилийски	
+                span 750
+              li
+                span Брокколи
+                span 1800
+        .day-point
+          .day-point__name 
+            h2 Улов дня
+          .day-point__desc
+            span Дикая рыба эксклюзивно
+              br
+              | Для ресторана assunta madre
+
+          .day-point__list
+            ul
+              li
+                span Жареный артишок с чесноком и мятой | 100 г	
+                span 2 100
+              li
+                span Шпинат аль сальто	
+                span 600
+              li
+                span Овощи гриль	
+                span 500
+              li
+                span Запеченный картофель	
+                span 850
+              li
+                span Пюре картофельное	
+                span 450
+              li
+                span Спаржа на гриле / на пару	
+                span 990
+              li
+                span Бок-чой	
+                span 790
+              li
+                span Цукини фри	
+                span 2 400
+              li
+                span Капоната по-сицилийски	
+                span 750
+              li
+                span Брокколи
+                span 1800
+
+      .day-button
+        +button('#','Вернуться в меню').button-black
